@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/footer.css">
+	 
+	 	  <style>
+ .box{width: 850px;
+ border:1px solid blue;
+ margin:0 0%;
+ text-align:left;
+			font-size:16px;
+			background-color:#f2f6fc;}
+			
+@media (max-width: 600px) {
+	 .box{ width: auto;
+		 }	
+
+
+	  </style>
+</head>
+<body background="img/pat.jpg">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="header">
+  <h2>Footer</h2>
+</div>
+
+<div class="row">
+ <!-- SIDE NAV -->
+  <div class="sidenav">
+  <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html" class="activenav">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+</div>
+
+ <!-- SIDE NAV END-->
+
+  <div class="column middle" style="background-color:#bbb;">
+   <!-- FOOTER EXAMPLE WITH SOCIAL MEDIA ICONS-->
+    <p style="text-align:center">→A footer can be used as a secondary navigation and/or to provide the social media accountsof the site.</p>
+ 
+  <footer id="footer">
+  <h3>Find me on social media:</h3>
+  <ul class="footer-f">
+						<li><a href="#"><img src="img/fb.png" alt="up" width="45" height="45"></a></li>
+						<li><a href="#"><img src="img/insta.png" alt="up" width="45" height="45"></a></li>
+						<li><a href="#"><img src="img/twi.png" alt="up" width="45" height="45"></a></li>
+						<li><a href="#"><img src="img/link.png" alt="up" width="45" height="45"></a></li>
+						<li><a href="#"><img src="img/mail.png" alt="up" width="45" height="45"></a></li>
+					</ul>
+					
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2018. All Rights Reserved.</p></div>
+ 	</footer>
+	<!-- /footer-->
+	
+	<!-- SHOW CODE HERE-->
+	<h4>HTML Code</h4>
+<div class="box">
+<xmp>
+<footer id="footer">
+<h3>Find me on social media:</h3>
+<ul class="footer-f">
+<li><a href="#"><img src="fb.png" alt="mock-up" width="45" height="45"></a></li>
+<li><a href="#"><img src="insta.png" alt="mock-up" width="45" height="45"></a></li>
+<li><a href="#"><img src="twi.png" alt="mock-up" width="45" height="45"></a></li>
+<li><a href="#"><img src="link.png" alt="mock-up" width="45" height="45"></a></li>
+<li><a href="#"><img src="mail.png" alt="mock-up" width="45" height="45"></a></li>
+</ul>
+<!-- /footer  -->
+
+<div class="footer-copyright">
+<p>Copyright © 2018. All Rights Reserved.</p></div>
+ 	</footer>
+</xmp>
+</div>
+
+
+	<h4>CSS Code</h4>
+<div class="box">
+<xmp>
+
+#footer {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #1C1D21
+}
+
+.footer-f {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-f li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+.footer-f li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 7px;
+  background-color:  #b3e6ff;
+  color:#FFF;
+}
+
+.footer-f li a:hover {
+   background-color:  #ff9933;
+   border-radius: 14px;
+}
+.footer-copyright p {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+  color:#868F9B;
+}
+</xmp>
+</div>
+</div></div>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

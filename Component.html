@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/comp.css">
+
+   </head>
+<body background="img/pat.jpg">
+ <!-- TOP NAV -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+ <!-- TOP NAV END-->
+
+<div class="header">
+  <h2>Cards</h2>
+</div>
+
+<div class="row">
+ <!-- SIDE NAV -->
+  <div class="sidenav">
+  <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html" class="activenav">Cards</a>
+   <a href="Component1.html">Pagination</a>
+</div>
+ <!-- SIDE NAV END-->
+  <div class="column middle" style="background-color:#bbb;">
+    <section>
+	  <p style="text-align:center">→A card is a flexible and extensible content container. It can be used with many ways to display info on a single topic.</p>
+	 <!-- SECTION OF CARDS-->
+  <div class="card-container">
+   
+    <div class="card">
+       <img src="img/navagio.jpg" alt="f">
+      <div class="content">
+        <h3>Navagio</h3>
+        <p>Information info</p>
+      </div>
+    </div>
+   
+    <div class="card">
+      <img src="img/amoreira.jpg" alt="e">
+      <div class="content">
+        <h3>Praia da Amoreira</h3>
+        <p>Information info</p>
+      </div>
+    </div>
+   
+    <div class="card">
+       <img src="img/ora.jpg" alt="d">
+      <div class="content">
+        <h3>Ora Beach</h3>
+        <p>Information info</p>
+      </div>
+    </div>
+   
+    <div class="card">
+      <img src="img/dream.jpg" alt="c">
+      <div class="content">
+        <h3>Dreamland Beach</h3>
+        <p>Information info</p>
+      </div>
+    </div>
+   
+    <div class="card">
+      <img src="img/orie.jpg" alt="b">
+      <div class="content">
+        <h3>Orient Bay </h3>
+        <p>Information info</p>
+      </div>
+    </div>
+   
+    <div class="card">
+      <img src="img/my.jpg" alt="a">
+      <div class="content">
+        <h3>Myrto</h3>
+        <p>Information info</p>
+      </div>
+    </div>
+	<!--BTN TO THE CODE-->
+	<div>  <button class="button"><span><a href="compcode.html">Code</a></span></button></div>
+    
+  </div>
+  
+</section></div>
+ 
+</div>
+
+<div class="footer">
+  <p>Theodora Konstantinou 2018</p>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

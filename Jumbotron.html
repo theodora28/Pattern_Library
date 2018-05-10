@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+   
+
+    <style>
+	h3{text-align:center;}
+	
+.activenav {
+    background-color:  #ffd9b3;
+
+	}
+	
+.row1{margin:2% 15%;}
+
+ .box{width: 500px;
+ border:1px solid blue;
+ margin:auto;
+ text-align:left;
+			font-size:16px;
+			background-color:#f2f6fc;}
+			
+ 	
+.container{background: linear-gradient(#6F9FD8,#6F9FD8,#EADEDB);
+				border-radius: 25px;
+				height: 290px; 
+				width:auto;
+				margin:0% 5%;
+				 }
+	
+  
+.buttonfour{
+  width:140px;
+  height:50px;
+  border:2px solid #6F9FD8;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:auto;
+}
+.buttonfour a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.clas-4{
+  width:140px;
+  height:50px;
+  bottom:-50px;
+  background:#6F9FD8;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.buttonfour:hover .clas-4{
+  bottom:0;
+}
+.buttonfour:hover a{
+  color:#fff;
+}
+
+@media (max-width: 600px) {
+	 .box{ width: auto;
+		 }	
+}
+
+@media (max-width: 700px) {
+	 .container{ width: auto;
+		 }	
+}
+
+@media (max-width: 600px) {
+	  p { display: none;
+		 }	
+}
+
+    </style>
+</head>
+<body background="img/pat.jpg">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+
+<div class="header">
+  <h2>Jumbotron</h2>
+</div>
+
+<div class="row">
+  <div class="sidenav">
+  <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html" class="activenav">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+</div>
+  <div class="column middle" style="background-color:#bbb;">
+  
+ 
+         <p style="text-align:center">→The jumbotron can be used for the hero section on web pages.</p>
+	<div class="container">
+      <div class="row1">
+        	<br/>
+
+        	<div class="jumbotron">
+        		<h1 class="display-3">Hello World!</h1>
+        		
+        		<hr class="m-y-md" />
+        		<p>
+        		Descriptive text is a text which says what a person or a thing is like. Its purpose is to describe and reveal a particular person, place, or thing.
+				Descriptive text is a text which says what a person or a thing is like. Its purpose is to describe and reveal a particular person, place, or thing.				
+        		</p>
+			
+			<!-- BTN-->
+        	<div class="buttonfour"><div class="clas-4"></div>
+			<a href="#">Click me</a> </div>
+	
+        </div>
+      </div>
+	  
+	  <!--SHOW CODE HERE-->
+	  
+    </div><h3>HTML Code</h3>
+	<div class="box">
+<xmp>
+<div class="container">
+<div class="row1">
+<br />
+<div class="jumbotron">
+
+<h1 class="display-3">Hello World!</h1>
+<hr class="m-y-md" />
+
+  <p>
+    Descriptive text is a text which says..				
+  </p>
+
+ <div class="buttonfour"><div class="clas-4"></div>
+      <a href="#">Click me</a> </div>
+</div>
+</div>
+    </div></xmp>
+	</div>
+	
+	
+<h3>CSS Code</h3>
+<div class="box">
+<xmp>
+.container{
+   background: linear-gradient(#6F9FD8,#6F9FD8,#EADEDB);
+				border-radius: 25px;
+				height: 290px; 
+				width:960px;
+				margin:0% 5%;}
+	</xmp>
+	</div>
+	
+	</div>
+	
+ </div>
+ 
+
+<div class="footer">
+   <p>Theodora Konstantinou 2018</p>
+</div>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

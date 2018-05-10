@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/header.css">
+	  
+	  	  <style> 
+		 
+ .box{width: 550px;
+ border:1px solid blue;
+ margin:0 0%;
+ text-align:left;
+			font-size:16px;
+			background-color:#f2f6fc;}
+			
+
+
+
+@media (max-width: 600px) {
+	 .box{ width: auto;
+		 }	
+
+	  </style>
+</head>
+<body background="img/pat.jpg">
+ <!-- TOP NAV -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+ <!-- TOP NAV END-->
+
+
+
+<div class="header">
+  <h2>Header Element</h2>
+</div>
+
+<div class="row">
+ <!-- SIDE NAV -->
+  <div class="sidenav">
+  <a href="nav.html">Navigation</a>
+  <a href="header.html" class="activenav">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+  <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+  <a href="Component1.html">Pagination</a>
+</div>
+ <!-- SIDE NAV END-->
+  <div class="column middle" style="background-color:#bbb;">
+   <p style="text-align:center">→Carousel can be used to show images, hero section or anywhere in the main section.</p>
+ 
+  
+   <!-- CAROUSEL HERE-->
+  <h3>Carousel</h3>
+  
+	<div class="carousel">
+		<img src="img/picone.jpg" class="img">
+		<img src="img/pictwo.jpg" class="img">
+		<img src="img/picthree.jpg" class="img">
+	</div>
+	
+	 <!-- SHOW CODE HERE-->
+	<h3>HTML and CSS Code</h3><div class="box">
+<xmp>
+<div class="carousel">
+		<img src="picone.jpg" class="img">
+		<img src="pictwo.jpg" class="img">
+		<img src="picthree.jpg" class="img">
+</div>
+</xmp>
+</div>
+
+	<div class="box">
+<xmp>
+.carousel
+{
+	width: 600px;
+	height: 266px;
+	border: 2.5px solid #6F9FD8;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.img
+{
+	position: absolute;
+	width: 600px;
+	height: 266px;
+	animation: mm 15s infinite;
+	opacity: 0;
+}
+
+@keyframes mm
+{
+	10%{opacity:1}
+	45%{opacity:0}
+}
+
+img:nth-child(0){animation-delay: 0s}
+img:nth-child(1){animation-delay: 5s}
+img:nth-child(2){animation-delay: 10s}
+</xmp>
+</div>
+
+
+	</br></br>
+
+	
+ 
+ <div class="row">
+  <!-- JUST IMAGES EXAMPLE-->
+	 <h3>Images-side by side with overlay</h3>
+  <div class="columnim">
+		<img src="img/one.jpg" alt="natue1" class="image" style="width:100%"><div class="overlay">
+		<div class="text">Waterfall</div>
+		</div>
+	</div>
+	  
+  <div class="columnim">
+    <img src="img/two.jpg" alt="nature2"  class="image" style="width:100%"><div class="overlay">
+		<div class="text">Beach</div>
+		</div>
+  </div>
+ </div>
+  </div>
+ 
+</div>
+
+<div class="footer">
+  <p>Theodora Konstantinou 2018</p>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

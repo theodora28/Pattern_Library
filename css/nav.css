@@ -1,0 +1,194 @@
+ /* STYLE FOR NAVIGATION */
+ 
+ .activenav {
+    background-color:  #ffd9b3;
+
+	}
+
+ /* FOR SIMPLE NAVIGATION */
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  width:800px;
+  
+  
+  
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ecf7f9;
+  color: black;
+}
+
+.nav a.active {
+  background-color:#52bbc7;
+  color: white;
+}
+
+/* dropdown*/
+.navbar {width:800px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navdropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navdropdown .navdropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .navdropdown:hover .dropbtn {
+    background-color: #52bbc7;
+}
+
+.navdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navdropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navdropdown-content a:hover {
+    background-color:  #52bbc7;
+}
+
+.navdropdown:hover .navdropdown-content {
+    display: block;
+}
+
+/* sidenav*/
+.sidenavv {margin:0% 25%;
+    height: auto;
+    width: 180px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#016887,#2696b7,#93e6ff);
+    overflow-x: hidden;
+    padding-top: 8px;
+}
+
+.sidenavv a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenavv a:hover {
+    color: #f1f1f1;
+}
+
+/* full screen*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+     background: linear-gradient(#DBB1CD,#DBB1CD,#944743);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #944743;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+ /* MEDIA , RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+  .nav {width:auto;
+    padding:0px 0px;}
+ }
+ 
+ @media screen and (max-width: 600px) {
+  .navbar {width:auto;
+    padding:0px 2px;}
+ }
+  
+  
+ @media screen and (max-width: 600px) {
+  .sidenavv {margin:auto;}
+  
+  }
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+
+
+  
+  

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+   <style> 
+		 
+ .box{width: 550px;
+ border:1px solid blue;
+ margin:0 0%;
+ text-align:left;
+			font-size:16px;
+			background-color:#f2f6fc;}
+			
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+	border-radius: 8px 8px;
+    transition: background-color .3s;
+	 background-color: #e1e7e8;
+}
+
+.pagination a.active { border-radius: 10px 25px;
+    background-color: #2caab7;
+	font-weight: bold;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {border-radius: 10px 12px;
+font-weight: bold;
+background-color: #ddd;}
+
+@media (max-width: 600px) {
+	 .box{ width: auto;
+		 }	
+
+	  </style>
+</head>
+<body background="img/pat.jpg">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<div class="header">
+  <h2>Pagination</h2>
+</div>
+
+<div class="row">
+ <!-- SIDE NAV -->
+  <div class="sidenav">
+  <a href="nav.html">Navigation</a>
+  <a href="header.html" >Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+  <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+  <a href="Component1.html" class="activenav">Pagination</a>
+</div>
+ <!-- SIDE NAV END-->
+  <div class="column middle" style="background-color:#bbb;">
+    <p style="text-align:center">→Pagination can be used to organsie pages,scroll through pages.</p>
+<h3>Pagination</h3>
+
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+	
+	</br></br>
+	 <!-- SHOW CODE HERE-->
+<h3>HTML and CSS Code</h3>
+<div class="box">
+<xmp>
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</xmp>
+</div>
+
+	<div class="box">
+<xmp>
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+	border-radius: 8px 8px;
+    transition: background-color .3s;
+	 background-color: #e1e7e8;
+}
+
+.pagination a.active { border-radius: 10px 25px;
+    background-color: #2caab7;
+	font-weight: bold;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {border-radius: 10px 12px;
+    font-weight: bold;
+    background-color: #ddd;}
+</xmp>
+</div>
+</br></br>
+
+</div>
+ 
+</div>
+
+<div class="footer">
+  <p>Theodora Konstantinou 2018</p>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/button.css">
+	  <style>
+ .box{width: 680px;
+ border:1px solid blue;
+ margin:auto;
+ text-align:left;
+			font-size:16px;
+			background-color:#f2f6fc;}
+			
+@media (max-width: 600px) {
+	 .box{ width: auto;
+		 }	
+		 
+
+ </style>
+</head>
+<body background="img/pat.jpg">
+
+<!-- top navigation -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!-- end top navigation -->
+
+
+<div class="header">
+  <h2>Six Buttons</h2>
+</div>
+<div class="row">
+<!-- side navigation -->
+  <div class="sidenav">
+  <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html" class="activenav">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+  <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+</div>
+<!-- end of side navigation -->
+
+	<!-- main col -->
+  <div class="column middle" style="background-color:#bbb;">
+  <section>
+   <p style="text-align:center">→Here are some different styles of buttons that can be used to provide feedback or an action.</p>
+  <!-- BTN 1 and 2 -->
+  <h3> Button 1 and 2</h3>
+  <p>Hover,active and Animation</p>
+   
+	<div class="flex-container">
+  <div>  
+  <button class="button1">Button1</button> </div>
+	 <div>  <button class="button"><span>Button2</span></button></div>
+
+  </div>
+  <!-- BTN 1 and 2 END -->
+  </br></br>
+	<!-- BTN 3 and 4 -->
+   <h3> Button 3 and 4</h3>
+   <p>Slide left and Slide up</p>
+  
+  <div id="container">
+  <div class="buttonthree"><div class="clas"></div>
+    <a href="#"> Button 3</a> </div>
+	  <div class="buttonfour"><div class="clas-4"></div>
+    <a href="#"> Button 4</a> </div>
+	
+</div>
+	<!-- BTN 3 and 4 END -->
+   </br></br>
+   <!-- BTN 5 and 6 -->
+    <h3> Button 5 and 6</h3>
+	<p>Fade and Icon</p>
+  <div class="flex-container">
+  <div>  
+ <button class="btnsix">Button5</button></div>
+	 <div>  <button class="btnicon"><img src="hm.svg" alt="mock-up" width="20" height="20"> Home</button></div>
+
+  </div>
+  <!-- BTN 3 and 4 END-->
+  
+  <!-- HTML CODE -->
+  <h4>HTML Code</h4>
+<div class="box">
+<xmp>
+<h3> Button 1 and 2</h3>
+   
+	  <div class="flex-container">
+  <div>  
+  <button class="button1">Button1</button> </div>
+	 <div>  <button class="button"><span>Button2</span></button></div>
+
+  </div>
+  </br></br>
+   <h3> Button 3 and 4</h3>
+  
+  <div id="container">
+  <div class="buttonthree"><div class="clas"></div>
+    <a href="#"> Button 3</a> </div>
+	  <div class="buttonfour"><div class="clas-4"></div>
+    <a href="#"> Button 4</a> </div>
+	
+</div>
+   </br></br>
+    <h3> Button 5 and 6</h3>
+  <div class="flex-container">
+  <div>  
+ <button class="btnsix">Button5</button></div>
+<div>  
+<button class="btnicon">
+<img src="hm.svg" alt="mock-up" width="20" height="20">
+ Home</button></div>
+
+  </div>
+</xmp>
+</div>
+ <!-- HTML CODE END-->
+ 
+ <!-- CSS CODE -->
+<h4>CSS Code</h4>
+<div class="box">
+<xmp>
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height:130px;
+  background-color: #6F9FD8;
+  
+}
+
+.flex-container > div {
+  background-color: #bbb;
+  width: 520px;
+  margin: 10px;
+   height:100px;
+  text-align: center;
+   font-size: 30px;
+}
+
+/* Button one */
+
+.button1{border-radius: 15px;
+ color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  margin: 15px;
+		background-color:  #005ce6;} 
+.button1:hover {background-color: #46a049;}
+.button1:active {background-color:black;
+				color:yellow;
+ } 
+ 
+ /* Button two */
+				
+.button {
+  border-radius: 10px;
+  background-color: #cf96bc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+#container{
+  height:50px;
+  margin:0px 15px;
+}
+
+/* Button three */
+.buttonthree{
+  width:140px;
+  height:50px;
+  border:2px solid #6F9FD8;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.buttonthree a{
+  font-family:arial;
+  font-size:16px;
+  color:black;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.clas{
+  width:140px;
+  height:50px;
+  top:-2px;
+  right:-140px;
+  background:#6F9FD8;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.buttonthree:hover .clas{
+  right:0;
+}
+.buttonthree:hover a{
+  color:#fff;
+}
+
+/* Button four */
+
+.buttonfour{
+  width:140px;
+  height:50px;
+  border:2px solid #6F9FD8;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.buttonfour a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.clas-4{
+  width:140px;
+  height:50px;
+  bottom:-50px;
+  background:#6F9FD8;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.buttonfour:hover .clas-4{
+  bottom:0;
+}
+.buttonfour:hover a{
+  color:#fff;
+}
+
+/* Fade button, five */
+
+.btnsix {
+   background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px;
+  transition: 0.6s;
+}
+
+.btnsix:hover {
+background: green;
+color:white;}
+
+/* Button with icon, six */
+
+.btnicon {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 18px;
+    cursor: pointer;
+	 margin: 20px;
+}
+
+.btnicon:hover {
+    background-color: RoyalBlue;
+}
+</xmp>
+</div>
+ <!-- CSS CODE END-->
+  </section>
+   </div>
+   
+ 
+</br>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

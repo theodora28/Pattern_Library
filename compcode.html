@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+   	  <style>
+ .box{width: 550px;
+ border:1px solid blue;
+ margin:0 0%;
+ text-align:left;
+			font-size:16px;
+			background-color:#f2f6fc;}
+			
+@media (max-width: 600px) {
+	 .box{ width: auto;
+		 }	
+}
+	</style>
+</head>
+<body background="img/pat.jpg">
+
+ <!-- TOP NAV -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+ <!-- TOP NAV END-->
+
+
+<div class="header">
+  <h2>Cards Code</h2>
+</div>
+ <!-- SIDE NAV -->
+<div class="row">
+  <div class="sidenav">
+  <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+</div>
+ <!-- SIDE NAV END-->
+  <div class="column middle" style="background-color:#bbb;">
+  
+   <!-- CODE OF CARDS-->
+ <h4>HTML Code</h4>
+<div class="box">
+<xmp> 
+<section>
+<div class="card-container">
+   
+    <div class="card">
+       <img src="navagio.jpg" alt="f">
+      <div class="content">
+        <h3>Navagio</h3>
+        <p>info about the beach.</p>
+      </div>
+    </div>
+	
+	**** same way other cards****
+ </div>
+  </section>
+	
+</xmp></div>
+
+ <h4>CSS Code</h4>
+<div class="box">
+<xmp> 
+.card-container {
+  max-width: 1280px;
+  margin:-10px auto;
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.card-container:hover .card {
+  opacity: .7;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+.card-container .card {
+  margin: 10px;
+  width: calc(100% / 3 - 20px);
+  float: left;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.05);
+  background: #FFF;
+  -webkit-transition: .3s all ease;
+  transition: .15s all ease;
+}
+.card-container .card:hover {
+  box-shadow: 0 0 8px 3px rgba(0,0,0,.15);
+  transform: scale(1.025);
+  opacity: 1;
+  filter: grayscale(0);
+  transition: .35s all ease;
+}
+.card-container .card img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.card-container .card .content {
+  padding: 15px 20px;
+}
+.card-container .card h3 {
+  font-size: 1.875em;
+  padding: 0;
+  margin: 0 0 10px;
+  letter-spacing: -.075rem;
+}
+.card-container .card p {
+  color: #888;
+  padding: 0;
+  margin: 0;
+ font-size: 1.049em;
+	
+</xmp></div>
+</div>
+ 
+</div>
+
+<div class="footer">
+   <p>Theodora Konstantinou 2018</p>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

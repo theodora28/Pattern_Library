@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pattern_Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/nav.css">
+	  <style>
+ .box{width: 550px;
+ border:1px solid blue;
+ margin:0 5%;
+ text-align:left;
+			font-size:16px;
+			background-color:#f2f6fc;}
+			
+			@media (max-width: 600px) {
+	 .box{ width: auto;
+		 }	
+
+	  </style>
+</head>
+<body background="img/pat.jpg">
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+    <a href="nav.html">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+   <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<div class="header">
+  <h2>Navigation Bar</h2>
+</div>
+
+<div class="row">
+  <div class="sidenav">
+  <a href="#about" class="activenav">Navigation</a>
+  <a href="header.html">Header</a>
+  <a href="buttons.html">Buttons</a>
+  <a href="Jumbotron.html">Jumbotron</a>
+  <a href="footer.html">Footer</a>
+  <a href="Component.html">Cards</a>
+   <a href="Component1.html">Pagination</a>
+</div>
+  <div class="column middle" style="background-color:#bbb;">
+  
+   <p style="text-align:center">→The navigation provides to users an easy way to interact with the website, options, catergories.</p>
+ 
+  <h3>1.Simple Navigation</h3>
+  <div class="nav">
+  <a class="active" href="#one">One</a>
+  <a href="#two">Two</a>
+  <a href="#three">Three</a>
+  <a href="#four">Four</a>
+</div>
+
+<h4>HTML Code</h4>
+<div class="box">
+<xmp><div class="nav">
+<a class="active" href="#one">One</a>
+<a href="#two">Two</a>
+<a href="#three">Three</a>
+<a href="#four">Four</a></div>
+</xmp>
+</div>
+
+<h4>CSS Code</h4>
+<div class="box">
+<xmp>
+.nav {
+overflow: hidden;
+background-color: #333;
+width:800px;
+}
+.nav a { float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;}
+
+.nav a:hover {
+background-color: #ecf7f9;
+color: black;}
+
+.nav a.active {
+background-color:#52bbc7;
+color: white;}
+</xmp></div>
+
+				 
+	<h3>2.Dropdown Navigation</h3>
+  <div class="navbar">
+  <a href="#one">One</a>
+  <a href="#two">Two</a>
+  <div class="navdropdown">
+    <button class="navdropbtn">Dropdown 
+    </button>
+    <div class="navdropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+	</div> 
+	</div>
+ <!-- HTML CODE -->
+<h4>HTML Code</h4>
+<div class="box">
+<xmp>
+<div class="navbar">
+<a href="#one">One</a>
+ <a href="#two">Two</a><div class="navdropdown">
+<button class="navdropbtn">Dropdown</button>
+<div class="navdropdown-content">
+ <a href="#">Link 1</a>
+<a href="#">Link 2</a>
+ <a href="#">Link 3</a></div></div> 
+</div></xmp></div>
+ <!-- HTML CODE END -->
+ <!-- CSS CODE -->				
+<h4>CSS Code</h4>
+<div class="box">
+<xmp>
+.navbar {width:800px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navdropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navdropdown .navdropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .navdropdown:hover .dropbtn {
+    background-color: #52bbc7;
+}
+
+.navdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navdropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navdropdown-content a:hover {
+    background-color:  #52bbc7;
+}
+
+.navdropdown:hover .navdropdown-content {
+    display: block;
+}</xmp></div> 
+<!-- CSS CODE END-->						
+							
+							
+   <h3>3.Vertical Navigation</h3>
+	
+<div class="sidenavv">
+  <a href="#">One</a>
+  <a href="#">Two</a>
+  <a href="#">Three</a>
+  <a href="#">Four</a>
+</div>
+
+ <!-- HTML CODE -->
+<h3>HTML Code</h3>
+<div class="box">
+<xmp>
+<div class="sidenavv">
+  <a href="#">One</a>
+  <a href="#">Two</a>
+  <a href="#">Three</a>
+  <a href="#">Four</a>
+</div>
+</xmp>
+</div>
+ <!-- HTML CODE END-->
+
+  <!-- CSS CODE -->
+<h3>CSS Code</h3>
+<div class="box">
+<xmp>
+/* sidenav*/
+.sidenavv {margin:0% 15%;
+    height: auto;
+    width: 180px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#016887,#2696b7,#93e6ff);
+    overflow-x: hidden;
+    padding-top: 8px;
+}
+
+.sidenavv a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenavv a:hover {
+    color: #f1f1f1;
+}
+</xmp>
+</div>
+ <!-- CSS CODE END-->
+	
+			<h3>4.Fullscreen Overlay Navigation</h3>
+			<div id="fullnav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+			<a href="#">one</a>
+			<a href="#">two</a>
+			<a href="#">three</a>
+			<a href="#">four</a>
+		  </div>
+		</div><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+ <!-- HTML CODE -->
+<h3>HTML Code</h3>
+<div class="box">
+<xmp>
+<div id="fullnav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" 
+  onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <a href="#">one</a>
+  <a href="#">two</a>
+  <a href="#">three</a>
+  <a href="#">four</a>
+  </div>
+</div><span style="font-size:30px;cursor:pointer" 
+onclick="openNav()">&#9776; menu</span>
+</xmp>
+</div>
+ <!-- HTML CODE END-->
+
+  <!-- CSS CODE -->
+<h3>CSS Code</h3>
+<div class="box">
+<xmp>
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+     background: linear-gradient(#DBB1CD,#DBB1CD,#944743);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #944743;
+}
+</xmp>
+</div>
+ <!-- CSS CODE END-->
+ <!-- JS CODE -->
+<h3>JS Code</h3>
+<div class="box">
+<xmp>
+function openNav() {
+    document.getElementById("fullnav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("fullnav").style.width = "0%";
+}
+</xmp>
+</div>
+ <!-- JS CODE END-->
+	</div>
+</div>
+ 
+</div>
+
+<div class="footer">
+  <p>Theodora Konstantinou 2018</p>
+</div>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+
+}
+
+function openNav() {
+    document.getElementById("fullnav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("fullnav").style.width = "0%";
+}
+
+
+
+</script>
+
+</body>
+</html>

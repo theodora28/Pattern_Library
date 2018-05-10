@@ -9,7 +9,9 @@ A collection of 7 components including:
 -Footer
 -Card
 -Paginationa
-
+ 
+ URL TO PATTERN LIBRARY--> https://theodora28.github.io/Pattern_Library/index.html
+ 
 _________________________________________________________________________________________________________________________________
 
 # Navigation

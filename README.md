@@ -10,6 +10,8 @@ A collection of 7 components including:
 -Card
 -Pagination
  
+ 
+ Playful atmoshere with clear structure.
  URL TO PATTERN LIBRARY--> https://theodora28.github.io/Pattern_Library/index.html
  
 _________________________________________________________________________________________________________________________________

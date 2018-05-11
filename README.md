@@ -8,7 +8,7 @@ A collection of 7 components including:
 -Jumbotron
 -Footer
 -Card
--Paginationa
+-Pagination
  
  URL TO PATTERN LIBRARY--> https://theodora28.github.io/Pattern_Library/index.html
  
